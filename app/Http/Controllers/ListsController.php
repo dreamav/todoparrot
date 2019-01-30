@@ -81,4 +81,12 @@ class ListsController extends Controller
     {
         //
     }
+
+
+    public function category($category)
+    {
+        return view('blog.category')
+            ->with('category',  $category);
+    }
+
 }

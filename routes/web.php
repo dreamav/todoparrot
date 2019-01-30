@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('lists/category/{category}', 'ListsController@category');
 Route::resource('lists', 'ListsController');

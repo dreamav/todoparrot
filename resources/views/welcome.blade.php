@@ -1,12 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to TODOParrot</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('content')
 
     <h1>Welcome to TODOParrot</h1>
 
-</body>
-</html>
+    <p>
+        TODOParrot is the ultimate productivity application sporting a soothing tropical theme.
+    </p>
+
+@endsection

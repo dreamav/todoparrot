@@ -11,10 +11,11 @@ class ListsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public  function  index()
     {
-        //
+        return view('lists.index');
     }
+
 
     /**
      * Show the form for creating a new resource.

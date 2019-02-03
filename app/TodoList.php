@@ -25,5 +25,10 @@ class TodoList extends Model
             ->where('done', true);
     }
 
+    public function categories()
+    {
+        return  $this->belongsToMany('App\Category')
+            ->withTimestamps();
+    }
 
 }

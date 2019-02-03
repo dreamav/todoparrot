@@ -31,4 +31,9 @@ class TodoList extends Model
             ->withTimestamps();
     }
 
+    public function comments()
+    {
+        return  $this->morphMany('App\Comment',  'commentable');
+    }
+
 }

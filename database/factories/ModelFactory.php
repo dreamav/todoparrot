@@ -22,3 +22,21 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Post::class, function (Faker\Generator $faker) {
+    return [
+    	'user_id' => function(){
+    		return factory(App\User::class)->create()->id;
+    	},
+        'title' => $faker->sentence,
+        'body' => $faker->sentence
+    ];
+});
+
+$factory->define(App\Tag::class, function (Faker\Generator $faker) {
+    $slug = $faker->word;
+    return [
+        'name' => ucwords($slug),
+        'slug' => $slug
+    ];
+});

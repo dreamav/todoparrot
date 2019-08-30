@@ -162,7 +162,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Cviebrock\EloquentSluggable\ServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+
+        //Cviebrock\EloquentSluggable\ServiceProvider::class,
 
         /*
          * Package Service Providers...
